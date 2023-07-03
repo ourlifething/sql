@@ -1,0 +1,35 @@
+@INSERT
+INSERT INTO テーブル名（カラム、カラム...)
+VALUES(値、値...);
+
+INSERT INTO テーブル名（カラムの並び）
+VALUES( 値 ）;
+
+ex)
+INSERT INTO books(category,title,price)
+VALUES('漫画', 'ドラゴンボール', 500);
+
+
+@SELECT
+SELECT 見たいもの FROM テーブル名;
+
+ex)
+SELECT title, price FROM books;
+
+
+@UPDATE
+UPDATE テーブル名 SET カラム＝値
+WHERE句で絞り込み
+
+ex)
+UPDATE books SET price = price + 50;
+WHERE id = 1;
+
+
+@DELETE
+DELETE FROM テーブル名;
+WHERE句で絞り込み
+
+ex)
+DELETE FROM books; （一斉削除）
+WHERE id = 1;
